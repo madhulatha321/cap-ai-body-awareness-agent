@@ -1,0 +1,30 @@
+<mvc:View
+  controllerName="agentui.agentui.controller.View1"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+
+  <Page id="_IDGenPage1" title="Body Awareness Assistant">
+    <content>
+      <VBox id="_IDGenVBox" class="sapUiSmallMargin">
+
+        <Title id="_IDGenTitle" text="Ask a Question" level="H2"/>
+
+        <Input id="_IDGenInput"
+          value="{/question}"
+          placeholder="Type your question here" />
+
+        <Button id="_IDGenButton"
+          text="Ask"
+          press=".onAsk"
+          type="Emphasized"
+          class="sapUiSmallMarginTop"/>
+
+        <Panel id="_IDGenPanel" headerText="Response" class="sapUiSmallMarginTop">
+          <Text id="_IDGenText" text="{/answer}" wrapping="true"/>
+        </Panel>
+
+      </VBox>
+    </content>
+  </Page>
+
+</mvc:View>
