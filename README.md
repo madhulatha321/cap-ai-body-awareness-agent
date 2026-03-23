@@ -1,25 +1,27 @@
-# Getting Started
+# SAP CAP AI Assistant (Body Awareness)
 
-Welcome to your new project.
+## Overview
+This project is an AI-ready SAP CAP application with a freestyle SAPUI5 frontend.
 
-It contains these folders and files, following our recommended project layout:
+## Architecture
+SAPUI5 Freestyle App  
+→ CAP OData V4 Service  
+→ Unbound Action (/agent/ask)  
+→ Response rendered in UI  
 
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
+## Features
+- User input-based interaction
+- CAP action-driven backend
+- Freestyle SAPUI5 UI
+- End-to-end integration
 
+## Tech Stack
+- SAP CAP (Node.js)
+- SAPUI5 (Freestyle)
+- OData V4
+- SAP BTP (Trial)
+- GitHub (Version Control)
 
-## Next Steps
-
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
-
-
-## Learn More
-
-Learn more at https://cap.cloud.sap/docs/get-started/.
+## Run Locally
+```bash
+cds watch
